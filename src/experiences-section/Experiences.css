@@ -1,0 +1,85 @@
+.experiences-section{
+    grid-area: experiences;
+    display: flex;
+    flex-direction: column;
+    gap: 4.88vh;
+}
+.experiences-section .title{
+    font-weight: 500;
+    font-size: 1.53rem;
+    line-height: 1.61rem;
+    color: #4F4F4F;
+}
+.experiences-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.88vh;
+}
+.job{
+    width: 100%;
+    display: flex;
+    gap: 4vw;
+}
+.company-logo{
+    width: 12vw;
+    height: auto;
+    transform: translateY(-1.6rem);
+}
+.job-infos{
+    display: flex;
+    flex-direction: column;
+}
+.job-infos .date{
+    font-weight: 500;
+    font-size: 0.97rem;
+    line-height: 0.94rem;
+    color: #828282;
+    margin-bottom: 1vh;
+}
+.job-name{
+    font-weight: 600;
+    font-size: 1.08rem;
+    line-height: 1.11rem;
+    color: #000000;
+    margin-bottom: 2.66vh;
+}
+.job-description{
+    font-weight: 500;
+    font-size: 1.08rem;
+    line-height: 1.31rem;
+    color: #828282;
+}
+
+@media screen and (min-width: 992px) {
+    .experiences-section .title{
+        font-weight: 500;
+        font-size: 1.33rem;
+        line-height: 1.61rem;
+    }
+    .job{
+        gap: 1.57vw;
+    }
+    .company-logo{
+        width: 6.28vw;
+        height: auto;
+        transform: translateY(-1.5rem);
+    }
+    .job-infos .date{
+        font-weight: 500;
+        font-size: 0.77rem;
+        line-height: 0.94rem;
+        margin-bottom: 1.33vh;
+    }
+    .job-name{
+        font-weight: 600;
+        font-size: 0.88rem;
+        line-height: 1.11rem;
+        margin-bottom: 3.66vh;
+    }
+    .job-description{
+        font-weight: 500;
+        font-size: 0.88rem;
+        line-height: 1.11rem;
+    }
+}

@@ -1,0 +1,294 @@
+.projects-section{
+    grid-area: projects;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vh;
+}
+.projects-tags{
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.77vh;
+    padding: 2vw;
+}
+.projects-tags .title{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.22rem;
+    color: #4F4F4F;
+}
+.tags{
+    display: flex;
+    gap: 1.6vw;
+}
+.tag{
+    padding-left: 1.42rem;
+    padding-right: 1.42rem;
+    padding-top: 0.54rem;
+    padding-bottom: 0.54rem;
+    border: 1px solid #4F4F4F;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.97rem;
+    line-height: 1.14rem;
+    color: #4F4F4F;
+    cursor: pointer;
+}
+.tag:hover{
+    border: 1px solid #2F80ED;
+    color: #2F80ED;
+}
+.tag.active{
+    background-color: #2F80ED;
+    border: 1px solid #2F80ED;
+    color: #FFFFFF;
+}
+
+.projects-list{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto) 1fr;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 2vw;
+}
+.project-picture{
+    background-color: #828282;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.66vh;
+}
+.project-technos{
+    display: flex;
+    gap: 1vw;
+    font-weight: 500;
+    font-size: 1.08rem;
+    line-height: 1.11rem;
+    color: #4F4F4F;
+    margin-bottom: 2vh;
+}
+.project-name{
+    font-weight: 500;
+    font-size: 1.63rem;
+    line-height: 1.81rem;
+    color: #333333;
+    margin-bottom: 1.6vh;
+}
+.project-description{
+    font-weight: 500;
+    font-size: 1.08rem;
+    line-height: 1.11rem;
+    color: #828282;
+}
+.project-buttons{
+    padding-top: 2.55vh;
+    justify-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.2vw;
+}
+.btn-project{
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.11rem;
+    border-radius: 8px;
+    border: 1px solid #2F80ED;
+}
+.btn-demo{
+    background: #2F80ED;
+    color: #FFFFFF;
+}
+.btn-demo:hover{
+    opacity: 0.7;
+}
+.btn-code{
+    background: #FFFFFF;
+    color: #2F80ED;
+}
+.btn-code:hover{
+    color: #FFFFFF;
+    background-color: hsl(214, 84%, 78%);
+    border: 1px solid hsl(214, 84%, 78%);
+    opacity: 0.7;
+}
+
+.pagination{
+    align-self: flex-end;
+    display: flex;
+    gap: 1.4vw;
+}
+.pagination-button{
+    width: 3.5vh;
+    height: 3.5vh;
+    border: 1px solid #4F4F4F;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 0.96rem;
+    line-height: 0.97rem;
+    color: #4F4F4F;
+}
+.pagination-button:hover{
+    border: 1px solid #2F80ED;
+    color: #2F80ED;
+}
+.pagination-button:hover .pagination-icon path{
+    fill: #2F80ED;
+}
+.pagination-button.active{
+    background-color: #2F80ED;
+    border: 1px solid #2F80ED;
+    color: #ffffff;
+}
+.pagination-icon{
+    width: 17px;
+    height: auto;
+}
+.pagination-icon path{
+    fill: #4F4F4F;
+}
+.pagination-dot{
+    height: 26px;
+}
+.pagination-dot img{
+    width: 16px;
+    height: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .projects-section{
+        gap: 4vh;
+    }
+    .projects-tags{
+        border-radius: 12px;
+        gap: 1.77vh;
+        padding: 1.66vw;
+    }
+    .projects-tags .title{
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.22rem;
+    }
+    .tags{
+        display: flex;
+        gap: 1.11vw;
+    }
+    .tag{
+        padding-left: 1.22rem;
+        padding-right: 1.22rem;
+        padding-top: 0.44rem;
+        padding-bottom: 0.44rem;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 0.77rem;
+        line-height: 0.94rem;
+    }
+
+    .projects-list{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.11vw;
+    }
+    .project{
+        border-radius: 12px;
+        padding: 1.66vw;
+    }
+    .project-picture{
+        border-radius: 12px;
+        width: 100%;
+        margin-bottom: 2.66vh;
+    }
+    .project-technos{
+        gap: 0.5vw;
+        font-weight: 500;
+        font-size: 0.88rem;
+        line-height: 1.11rem;
+        margin-bottom: 2.44vh;
+    }
+    .project-name{
+        font-weight: 500;
+        font-size: 1.33rem;
+        line-height: 1.61rem;
+        margin-bottom: 2vh;
+    }
+    .project-description{
+        font-weight: 500;
+        font-size: 0.88rem;
+        line-height: 1.11rem;
+    }
+    .project-buttons{
+        padding-top: 4.55vh;
+        gap: 0.9vw;
+    }
+    .btn-project{
+        padding-top: 0.66rem;
+        padding-bottom: 0.66rem;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.11rem;
+        border-radius: 12px;
+    }
+
+    .pagination{
+        align-self: flex-end;
+        display: flex;
+        gap: 0.83vw;
+    }
+    .pagination-button{
+        width: 36px;
+        height: 36px;
+        border: 1px solid #4F4F4F;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 0.66rem;
+        line-height: 0.77rem;
+        color: #4F4F4F;
+    }
+    .pagination-button:hover{
+        border: 1px solid #2F80ED;
+        color: #2F80ED;
+    }
+    .pagination-button:hover .pagination-icon path{
+        fill: #2F80ED;
+    }
+    .pagination-button.active{
+        background-color: #2F80ED;
+        border: 1px solid #2F80ED;
+        color: #ffffff;
+    }
+    .pagination-icon{
+        width: 16px;
+        height: auto;
+    }
+    .pagination-icon path{
+        fill: #4F4F4F;
+    }
+    .pagination-dot{
+        height: 36px;
+    }
+    .pagination-dot img{
+        width: 16px;
+        height: auto;
+    }
+}
